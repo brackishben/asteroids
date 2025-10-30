@@ -51,7 +51,7 @@ def main():
             for item in bullets:
                 if asteroid.collision_check(item):
                     item.kill()
-                    asteroid.kill()
+                    asteroid.split()
 
         for thing in drawable:
             thing.draw(screen)
